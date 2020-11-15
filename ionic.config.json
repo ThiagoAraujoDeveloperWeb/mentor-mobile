@@ -1,5 +1,7 @@
 {
   "name": "mentor",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

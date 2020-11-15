@@ -3,8 +3,13 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+    production: false,
+    api: {
+        url: 'https://api-mentor-mobile.herokuapp.com/',
+    },
+    amb: 'AMBIENTE DE HOMOLOGAÇÃO, TESTE E TREINAMENTO'
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file

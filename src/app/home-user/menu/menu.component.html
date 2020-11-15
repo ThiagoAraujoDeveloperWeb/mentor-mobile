@@ -1,0 +1,59 @@
+<div class="app-menu">
+
+  <div class="menu-curto">
+
+    <div class="icone home" (click)="menuClick(1)"><i class="fa fa-home"></i></div>
+    <div class="icone bookmark" (click)="menuClick(2)"><i class="fa fa-bookmark"></i></div>
+    <div class="icone blog" (click)="menuClick(3)"><i class="fa fa-medium"></i></div>
+    <div class="icone music" (click)="menuClick(4)"><i class="fa fa-music"></i></div>
+    <div class="icone email" (click)="menuClick(5)"><i class="fa fa-envelope"></i></div>
+    <div class="spacer"></div>
+    <div class="icone power" (click)="sair()"><i class="fa fa-power-off"></i>
+    </div>
+  
+  </div>
+
+  <div class="menu-aberto" [ngClass]="{'opened': menuOpened}" [ngSwitch]="active">
+
+    <div class="sub-menu menu home" *ngSwitchCase="1">
+      <a href="home-user">Página inicial</a>
+      <a href="home-user/dashboard">DashBoard</a>
+      <a>Opção três aqui</a>
+      <a>Opção quatro aqui</a>
+    </div>
+    
+    <div class="sub-menu menu bookmark" *ngSwitchCase="2">
+      <a>Opção um aqui</a>
+      <a>Opção dois aqui</a>
+      <a>Opção três aqui</a>
+      <a>Opção quatro aqui</a>
+    </div>
+    
+    <div class="sub-menu menu blog" *ngSwitchCase="3">
+      <a>Opção um aqui</a>
+      <a>Opção dois aqui</a>
+      <a>Opção três aqui</a>
+      <a>Opção quatro aqui</a>
+    </div>
+    
+    <div class="sub-menu menu music" *ngSwitchCase="4">
+      <a>Opção um aqui</a>
+      <a>Opção dois aqui</a>
+      <a>Opção três aqui</a>
+      <a>Opção quatro aqui</a>
+    </div>
+    
+    <div class="sub-menu menu email" *ngSwitchCase="5">
+      <a>Opção um aqui</a>
+      <a>Opção dois aqui</a>
+      <a>Opção três aqui</a>
+      <a>Opção quatro aqui</a>
+    </div>
+    
+  </div>
+
+  <div class="area-app">
+    <ng-content></ng-content>
+  </div>
+
+</div>
